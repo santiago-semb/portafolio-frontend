@@ -1,0 +1,35 @@
+<app-header></app-header>
+<app-nav></app-nav>
+
+<div class="container">
+
+    <form class="form-añadir">
+        <h2 id="h2-añadir">CREAR PROYECTO</h2>
+        <div class="form-group">
+          <label for="nombreProyecto">Nombre</label>
+          <input type="text" #nombreProyecto name="nombreProyecto" [(ngModel)]="nombreProject" class="form-control" name="nombreProyecto" placeholder="Nombre del proyecto">
+        </div>
+        <div class="form-group">
+          <label for="lenguajeProyecto">Lenguajes</label>
+          <input type="text" #lenguajeProyecto name="lenguajeProyecto" [(ngModel)]="lenguajeProject" class="form-control" name="lenguajeProyecto" placeholder="Lenguajes del proyecto">
+        </div>
+        <div class="form-group">
+            <label for="linkProyecto">Link</label>
+            <input type="text" #linkProyecto name="linkProyecto" [(ngModel)]="linkProject" class="form-control" name="linkProyecto" placeholder="Link del proyecto">
+        </div>
+    </form>
+
+      <form class="form-añadir-2" (ngSubmit)="submit()">
+        <h2 id="h2-añadir">CONFIRMAR</h2>
+        <p style="font-weight: bold; width: 15%; text-align: center; color: gray;">Nombre</p>
+        <p id="campo-nombre"><b>{{nombreProyecto.value}}</b></p>
+        <p style="font-weight: bold; width: 15%; text-align: center; color: gray;">Lenguaje</p>
+        <p id="campo-lenguaje"><b>{{lenguajeProyecto.value}}</b></p>
+        <p style="font-weight: bold; width: 15%; text-align: center; color: gray;">Link</p>
+        <p id="campo-link"><b>{{linkProyecto.value}}</b></p>
+        <button type="submit" class="btn btn-warning">Crear</button>
+      </form>
+
+    
+
+</div>

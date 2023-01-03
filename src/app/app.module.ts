@@ -17,8 +17,16 @@ import { ContentComponent } from './content/content.component';
 import { FormsModule } from '@angular/forms';
 import { SubNavCrudComponent } from './sub-nav-crud/sub-nav-crud.component';
 import { AccionesSkillsComponent } from './acciones-skills/acciones-skills.component';
-import { HtmlComponent } from './html/html.component';
-import { CssComponent } from './css/css.component';
+import { AgregarProyectoComponent } from './agregar-proyecto/agregar-proyecto.component';
+import { AgregarSkillComponent } from './agregar-skill/agregar-skill.component';
+import { RegisterComponent } from './register/register.component';
+import { AuthService } from './service/auth.service';
+import { DueñoProyectoService } from './service/dueño-proyecto.service';
+import { ProyectosService } from './service/proyectos.service';
+import { SkillsService } from './service/skills.service';
+import { TokenService } from './service/token.service';
+import { LoginGuardian } from './login/login-guardian';
+
 
 @NgModule({
   declarations: [
@@ -35,8 +43,9 @@ import { CssComponent } from './css/css.component';
     ContentComponent,
     SubNavCrudComponent,
     AccionesSkillsComponent,
-    HtmlComponent,
-    CssComponent
+    AgregarProyectoComponent,
+    AgregarSkillComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +53,7 @@ import { CssComponent } from './css/css.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AuthService,DueñoProyectoService,ProyectosService,SkillsService,TokenService,LoginGuardian],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

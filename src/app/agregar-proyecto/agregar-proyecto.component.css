@@ -1,0 +1,42 @@
+.form-añadir {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.form-añadir-2 {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+#h2-añadir {
+    text-align: center;
+    border-bottom: 2px solid gray;
+    padding: 5px;
+    color: gray;
+    font-weight: bold;
+}
+
+#campo-nombre, #campo-lenguaje, #campo-link {
+    overflow: auto;
+}
+
+
+@media (max-width: 512px) {
+    #h2-añadir {
+       font-size: 15px;
+    }
+}
+
+@media (max-width: 309px) {
+    #h2-añadir {
+       font-size: 10px;
+    }
+}

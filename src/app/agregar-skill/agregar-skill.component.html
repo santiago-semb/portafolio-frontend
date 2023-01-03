@@ -1,0 +1,31 @@
+<app-header></app-header>
+<app-nav></app-nav>
+
+<div class="container">
+
+    <form class="form-añadir">
+        <h2 id="h2-añadir">CREAR SKILL</h2>
+        <div class="form-group">
+          <label for="nombreSkill">Nombre</label>
+          <input type="text" #nameSkill name="nombreProyecto" [(ngModel)]="nombreSkill" class="form-control" name="nombreProyecto" placeholder="Nombre de skill">
+        </div>
+        <div class="form-group">
+          <label for="imgSkill">Imagen</label>
+          <input type="text" #imageSkill name="lenguajeProyecto" [(ngModel)]="imagenSkill" class="form-control" name="lenguajeProyecto" placeholder="Imagen">
+          <small style="color: gray;">Puede ser un link</small>
+        </div>
+    </form>
+
+      <form class="form-añadir-2" (ngSubmit)="submit()">
+        <h2 id="h2-añadir">CONFIRMAR</h2>
+        <p style="font-weight: bold; width: 15%; text-align: center; color: gray;">Nombre </p>
+        <p id="campo-nombre"><b>{{nameSkill.value}}</b></p>
+        <p style="font-weight: bold; width: 15%; text-align: center; color: gray;">Imagen </p>
+        <p id="campo-imagen"><b>{{imageSkill.value}}</b></p>
+        <button type="submit" class="btn btn-info">Crear</button>
+      </form>
+
+    
+
+</div>
+

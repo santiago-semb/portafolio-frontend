@@ -4,3 +4,7 @@
     background-color: rgb(26, 28, 29);
     margin-top: -16px;
 }
+
+#div-acerca-de img {
+    max-width: 100%;
+}

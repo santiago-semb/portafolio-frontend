@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 #proyectos {
     animation-name: tabla2;
     animation-duration: 3s;
@@ -11,7 +16,6 @@
 @keyframes tabla2 {
 
     50% {
-        background-color: rgb(66, 197, 77);
         color: white;
     }
 
@@ -24,4 +28,41 @@
         color: white;
     }
 
+}
+
+
+@media (max-width: 392px) {
+    
+}
+
+@media (max-width: 392px) {
+    table {
+        width:100%;
+    }
+    thead {
+        display: none;
+    }
+    tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+    tr td:first-child {
+        background: #f0f0f0;
+        font-weight:bold;
+        font-size:1.3em;
+    }
+    tbody td {
+        display: block;
+    }
+    #id-proyecto {
+        border-right: 2px solid rgb(23, 99, 109);
+    }
+
+    #boton-eliminar,#link-proyecto,#lenguaje-proyecto {
+        text-align: center;
+    }
+    tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align:center;
+    }
 }

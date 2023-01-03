@@ -21,4 +21,16 @@ export class SkillsService {
     return this.httpClient.get<Skills>(this.URL + "traer/" + id);
   }
 
+  public eliminarSkill(id:number): Observable<Skills> {
+    return this.httpClient.delete<Skills>(this.URL + "eliminar/" + id);
+  }
+
+  public crearSkill(skill:Skills): Observable<Skills> {
+    return this.httpClient.post<Skills>(this.URL + "crear", skill);
+  }
+
+  /*public actualizarSkill(id:number, nombre:string, img:string): Observable<Skills> {
+    return this.httpClient.put<Skills>(this.URL + "actualizar/" + id);
+  }*/
+
 }

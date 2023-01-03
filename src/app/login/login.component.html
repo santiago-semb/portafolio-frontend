@@ -14,15 +14,15 @@
             <div class="login-form">
                <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
                   <div class="form-group">
-                     <label>Usename</label>
-                     <input type="text" #username [(ngModel)]="nombreUsuario" id="username" class="form-control" name="nombreUsuario" placeholder="username: user" required>
+                     <label>Username</label>
+                     <input type="text" #username [(ngModel)]="nombreUsuario" id="username" class="form-control" name="nombreUsuario"  required>
                   </div>
                   <div class="form-group">
                      <label>Password</label>
-                     <input type="password"  [(ngModel)]="password" id="password" class="form-control" name="password" placeholder="password: user" required>
+                     <input type="password"  [(ngModel)]="password" id="password" class="form-control" name="password"  required>
                   </div>
-                  <button type="submit" class="btn btn-black">Login</button>
-                  <button type="submit" class="btn btn-secondary" disabled>Register</button>
+                  <button type="submit" class="btn btn-black" routerLink="/login">Login</button>
+                  <button type="submit" class="btn btn-secondary" routerLink="/register">Register</button>
                </form>
             </div>
          </div>

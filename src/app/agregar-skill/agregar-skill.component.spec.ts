@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CssComponent } from './css.component';
+import { AgregarSkillComponent } from './agregar-skill.component';
 
-describe('CssComponent', () => {
-  let component: CssComponent;
-  let fixture: ComponentFixture<CssComponent>;
+describe('AgregarSkillComponent', () => {
+  let component: AgregarSkillComponent;
+  let fixture: ComponentFixture<AgregarSkillComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CssComponent ]
+      declarations: [ AgregarSkillComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CssComponent);
+    fixture = TestBed.createComponent(AgregarSkillComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -24,5 +24,13 @@ export class ProyectosService {
   public eliminarProyecto(id:number) {
     return this.httpClient.delete(this.URL + "eliminar/" + id);
   }
+
+  public crearPoyecto(proyecto: Proyectos): Observable<Proyectos> {
+    return this.httpClient.post<Proyectos>(this.URL + "crear", proyecto);
+  }
+
+  /*public actualizarProyecto(id:number, nombre:string, lenguaje:string, link:string): Observable<Proyectos> {
+    return this.httpClient.put<Proyectos>(this.URL + "actualizar/" + id);
+  }*/
   
 }

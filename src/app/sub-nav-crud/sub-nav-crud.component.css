@@ -1,8 +1,8 @@
 ul {
-    background-color: rgb(59, 75, 75);
+    background-color: gray;
     border-bottom: 1px outset black;
 }
 
 ul li {
-    text-align: center;
+    margin: 0 auto;
 }

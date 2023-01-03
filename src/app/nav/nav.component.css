@@ -5,3 +5,18 @@
 #nav-b:hover {
     color: aqua;
 }
+
+@media (max-width: 508px) {
+    #nav-b-logo {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid gray;
+    }
+}
+
+@media (max-width: 392px) {
+    #nav-b {
+        width: 100%;
+        text-align: center;
+    }
+}

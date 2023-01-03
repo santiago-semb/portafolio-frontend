@@ -1,27 +1,23 @@
 <app-header></app-header>
 <app-nav></app-nav>
-
-<table class="table table-dark" id="table">
+<app-sub-nav-crud></app-sub-nav-crud>
+<table class="table table-dark" id="tabla">
     <thead>
       <tr>
         <th scope="col">#</th>
-        <th scope="col">Nombre</th>
-        <th scope="col">Lenguaje</th>
-        <th scope="col">Link</th>
+        <th scope="col" id="nombre-proyecto">Nombre</th>
+        <th scope="col" id="lenguaje-proyecto">Lenguaje</th>
+        <th scope="col" id="link-proyecto">Link</th>
+        <th id="boton-eliminar"></th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let proyecto of proyectos;let i=index;" id="proyectos">
-        <th scope="row">{{i+1}}</th>
-        <td>{{ proyecto.nombre }}</td>
-        <td style="font-weight: bold;">{{ proyecto.lenguaje }}</td>
-        <td><a href="{{proyecto.link}}" target="_blank" id="a-proyectos">{{ proyecto.link }}</a></td>
-      </tr>
-      <tr *ngFor="relleno of rellenos;let i=index">
-        <th scope="row">{{i+4}}</th>
-        <td id="proyectos-no"></td>
-        <td style="font-weight: bold;"></td>
-        <td><a href="#" target="_blank"></a></td>
+        <th id="id-proyecto" scope="row">{{i+1}}</th>
+        <td id="nombre-proyecto">{{ proyecto.nombre }}</td>
+        <td id="lenguaje-proyecto" style="font-weight: bold; text-transform: uppercase;">{{ proyecto.lenguaje }}</td>
+        <td id="link-proyecto"><a href="{{proyecto.link}}" target="_blank" id="a-proyectos">{{ proyecto.link }}</a></td>
+        <td id="boton-eliminar"><button class="btn btn-dark" (click)="eliminarProyecto(proyecto.id)">Eliminar</button></td>
       </tr>
     </tbody>
   </table>
