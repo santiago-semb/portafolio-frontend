@@ -1,0 +1,27 @@
+#proyectos {
+    animation-name: tabla2;
+    animation-duration: 3s;
+}
+
+#a-proyectos {
+    animation: a;
+    animation-duration: 3s;
+}
+
+@keyframes tabla2 {
+
+    50% {
+        background-color: rgb(66, 197, 77);
+        color: white;
+    }
+
+}
+
+
+@keyframes a {
+
+    50% {
+        color: white;
+    }
+
+}

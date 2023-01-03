@@ -1,0 +1,7 @@
+#nav-b {
+    transition: 200ms all;
+}
+
+#nav-b:hover {
+    color: aqua;
+}
