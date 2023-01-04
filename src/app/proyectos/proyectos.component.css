@@ -31,8 +31,36 @@
 }
 
 
-@media (max-width: 392px) {
-    
+@media (max-width: 836px) {
+    table {
+        width:100%;
+    }
+    thead {
+        display: none;
+    }
+    tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+    tr td:first-child {
+        background: #f0f0f0;
+        font-weight:bold;
+        font-size:1.3em;
+    }
+    tbody td {
+        display: block;
+    }
+    #id-proyecto {
+        border-right: 2px solid rgb(23, 99, 109);
+    }
+
+    #boton-eliminar,#link-proyecto,#lenguaje-proyecto,#nombre-proyecto {
+        text-align: center;
+    }
+    tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align:center;
+    }
 }
 
 @media (max-width: 392px) {
