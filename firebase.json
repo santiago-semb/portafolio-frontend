@@ -1,0 +1,28 @@
+{
+  "hosting": {
+    "public": "dist/proyecto-integrador-arg-programa",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "redirects": [ {
+      "source": "/login",
+      "destination": "/",
+      "type": 301
+    },  
+    {
+      "source": "/auth/**",
+      "destination": "/",
+      "type": 301
+    },
+    {
+      "source": "/register",
+      "destination": "/",
+      "type": 301
+    }
+    ]
+  
+  }
+}
+

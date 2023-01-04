@@ -8,7 +8,7 @@ import { Dueño_proyecto } from '../model/Dueño_proyecto.model';
 })
 export class DueñoProyectoService {
 
-  URL = "http://localhost:8080/dueño/";
+  URL = "https://backend-portafolio-k7e9.onrender.com/dueño/";
 
   constructor(private httpClient:HttpClient) { }
 
