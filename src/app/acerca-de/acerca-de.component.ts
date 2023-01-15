@@ -8,7 +8,7 @@ import { DueñoProyectoService } from '../service/dueño-proyecto.service';
   styleUrls: ['./acerca-de.component.css']
 })
 export class AcercaDeComponent implements OnInit {
-  dueno:Dueño_proyecto = new Dueño_proyecto("","",0,"","")
+  dueno:Dueño_proyecto = new Dueño_proyecto("","",0,"","");
 
   constructor(private dueñoProyectoService: DueñoProyectoService) {}
 

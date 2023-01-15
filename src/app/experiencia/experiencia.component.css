@@ -1,0 +1,12 @@
+#li-exp {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100%;
+}
+
+@media (max-width: 636px) {
+    #li-exp {
+        width: 100%;
+    }
+}

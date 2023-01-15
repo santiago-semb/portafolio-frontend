@@ -1,6 +1,7 @@
 img {
     width: 100px;
     height: 100px;
+    max-width: 100%;
 }
 
 img:hover {
@@ -26,7 +27,6 @@ img:hover {
     animation-duration: 4s;
     animation-fill-mode: forwards;
 }
-
 
 @keyframes logos {
     0% {

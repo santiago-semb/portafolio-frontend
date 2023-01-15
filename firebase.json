@@ -20,6 +20,31 @@
       "source": "/register",
       "destination": "/",
       "type": 301
+    },
+    {
+      "source": "/inicio",
+      "destination": "inicio",
+      "type": 301
+    },
+    {
+      "source": "/proyectos",
+      "destination": "proyectos",
+      "type": 301
+    },
+    {
+      "source": "/acerca-de",
+      "destination": "acerca-de",
+      "type": 301
+    },
+    {
+      "source": "/agregar-skill",
+      "destination": "agregar-skill",
+      "type": 301
+    },
+    {
+      "source": "/agregar-proyecto",
+      "destination": "agregar-proyecto",
+      "type": 301
     }
     ]
   

@@ -26,6 +26,9 @@ import { ProyectosService } from './service/proyectos.service';
 import { SkillsService } from './service/skills.service';
 import { TokenService } from './service/token.service';
 import { LoginGuardian } from './login/login-guardian';
+import { DbUserComponent } from './db-user/db-user.component';
+import { ExperienciaComponent } from './experiencia/experiencia.component';
+import { EducacionComponent } from './educacion/educacion.component';
 
 
 @NgModule({
@@ -45,7 +48,10 @@ import { LoginGuardian } from './login/login-guardian';
     AccionesSkillsComponent,
     AgregarProyectoComponent,
     AgregarSkillComponent,
-    RegisterComponent
+    RegisterComponent,
+    DbUserComponent,
+    ExperienciaComponent,
+    EducacionComponent
   ],
   imports: [
     BrowserModule,

@@ -3,8 +3,17 @@
 
 <div class="container">
 
-    <form class="form-añadir">
-        <h2 id="h2-añadir">CREAR PROYECTO</h2>
+    <form class="form-añadir" style="width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;">
+        <h2 id="h2-añadir" style="text-align: center;
+        border-bottom: 2px solid gray;
+        padding: 5px;
+        color: gray;
+        font-weight: bold;">CREAR PROYECTO</h2>
         <div class="form-group">
           <label for="nombreProyecto">Nombre</label>
           <input type="text" #nombreProyecto name="nombreProyecto" [(ngModel)]="nombreProject" class="form-control" name="nombreProyecto" placeholder="Nombre del proyecto">
@@ -19,14 +28,19 @@
         </div>
     </form>
 
-      <form class="form-añadir-2" (ngSubmit)="submit()">
+      <form class="form-añadir-2" (ngSubmit)="submit()" style="width: 50%;
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 20px;">
         <h2 id="h2-añadir">CONFIRMAR</h2>
         <p style="font-weight: bold; width: 15%; text-align: center; color: gray;">Nombre</p>
-        <p id="campo-nombre"><b>{{nombreProyecto.value}}</b></p>
+        <p id="campo-nombre" style=" overflow: auto;"><b>{{nombreProyecto.value}}</b></p>
         <p style="font-weight: bold; width: 15%; text-align: center; color: gray;">Lenguaje</p>
-        <p id="campo-lenguaje"><b>{{lenguajeProyecto.value}}</b></p>
+        <p id="campo-lenguaje" style=" overflow: auto;"><b>{{lenguajeProyecto.value}}</b></p>
         <p style="font-weight: bold; width: 15%; text-align: center; color: gray;">Link</p>
-        <p id="campo-link"><b>{{linkProyecto.value}}</b></p>
+        <p id="campo-link" style=" overflow: auto;"><b>{{linkProyecto.value}}</b></p>
         <button type="submit" class="btn btn-warning">Crear</button>
       </form>
 
